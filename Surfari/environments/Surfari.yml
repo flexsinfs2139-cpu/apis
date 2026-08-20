@@ -1,0 +1,5 @@
+name: Surfari
+variables:
+  - name: BASE_URL
+    value: https://api.surfari.flexsin.org/api/v1
+    description: ""
