@@ -3,8 +3,10 @@ variables:
   - name: BASE_URL
     value: https://api.surfari.flexsin.org/api/v1
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJhNGU3NjkyYS1mZjQ0LTRhNTMtYWVlMy1mM2EzZDJhZDU4YWYiLCJpYXQiOjE3ODcyODgyODMsImV4cCI6MTc4NzI5MTg4M30.AS9-twMl_vLAcugCfppuiELSAjSJaeLFZzoBmPPPy_U
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzMzU0NmNmZi1jYjJkLTQxMjMtODE0ZC0yYmYwNGQ2OGZjOTIiLCJpYXQiOjE3ODcyOTI1NjEsImV4cCI6MTc4NzI5NjE2MX0.5cA_OoG9CBUAncTcjszQowFe0ZbuIcdwreco9lhaoBA
   - name: REFRESH_TOKEN
-    value: rt_4814b6f8b5ee687818e9ad54a3f678940a34a0dd97a928b5d1a816164c5cb08e
-  - name: AUTH_ERROR
-    value: Invalid email/phone number or password
+    value: rt_26db9d614e02548a68e8d2628439d76c001e3738eb3a35022244d4711bc9e441
+  - name: FORGET_PASS_TOKEN
+    value: 5aeae2dd9ee22e0a4c64420183087e3d6615bf7b64cedefb
+  - name: PASSWORD
+    value: Flexsin@123
