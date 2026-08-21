@@ -1,0 +1,33 @@
+info:
+  name: profile
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/onboarding/photographer/profile"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  body:
+    type: json
+    data: |-
+      {
+        "homeSpotId": "gordon",
+        "homeSpot": {
+          "name": "Gordon Beach",
+          "address": "Gordon Beach, Tel Aviv",
+          "latitude": 32.0839,
+          "longitude": 34.7654,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0839,34.7654"
+        },
+        "equipment": ["drone", "telephoto lens"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,26 @@
+info:
+  name: rate-session
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/sessions/{{sessionId}}/rating"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  body:
+    type: json
+    data: |-
+      {
+        "rating": 4,
+        "worthIt": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

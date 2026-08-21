@@ -1,0 +1,19 @@
+info:
+  name: get-beach-profile
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/beach/profile"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

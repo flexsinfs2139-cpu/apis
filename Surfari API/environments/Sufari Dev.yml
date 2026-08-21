@@ -1,0 +1,8 @@
+name: Sufari Dev
+variables:
+  - name: BASE_URL
+    value: http://100.100.7.63:3006/api/v1
+  - name: TOKEN
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ZTgyMzQ0Ny0yZTc3LTRkYWUtOWQ1ZS04ZjY5ZGZkYTAyYTYiLCJpYXQiOjE3ODcyMTQ5ODgsImV4cCI6MTc4NzIxODU4OH0.MHxBm16s-e3GNh4cZ3_U8xXdEPibnXTEjAEER9oT9kQ
+  - name: REFRESH_TOKEN
+    value: FEWFWE

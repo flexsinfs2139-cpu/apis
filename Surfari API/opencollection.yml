@@ -1,0 +1,25 @@
+opencollection: 1.0.0
+
+info:
+  name: Surfari API
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+docs:
+  content: Module-wise API requests for the Surfari app. Generated from src/core/api, src/features/*/services, src/services, and docs/api/*.txt. Requests inside folders marked (Proposed) are speculative contracts with no backing service code yet.
+  type: text/markdown
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

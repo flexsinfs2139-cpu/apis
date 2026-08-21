@@ -1,0 +1,32 @@
+info:
+  name: open-meteo-marine
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: https://marine-api.open-meteo.com/v1/marine?latitude=32.0839&longitude=34.7654&hourly=wave_height,wave_period,wave_direction,swell_wave_height,swell_wave_period,swell_wave_direction,wind_wave_height,wind_wave_period,wind_wave_direction,sea_surface_temperature,sea_level_height_msl&forecast_days=1&timezone=auto
+  params:
+    - name: latitude
+      value: "32.0839"
+      type: query
+    - name: longitude
+      value: "34.7654"
+      type: query
+    - name: hourly
+      value: wave_height,wave_period,wave_direction,swell_wave_height,swell_wave_period,swell_wave_direction,wind_wave_height,wind_wave_period,wind_wave_direction,sea_surface_temperature,sea_level_height_msl
+      type: query
+    - name: forecast_days
+      value: "1"
+      type: query
+    - name: timezone
+      value: auto
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

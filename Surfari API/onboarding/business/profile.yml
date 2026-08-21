@@ -1,0 +1,30 @@
+info:
+  name: profile
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/onboarding/business/profile"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  body:
+    type: json
+    data: |-
+      {
+        "businessType": "surfSchool",
+        "businessName": "Tel Aviv Surf School",
+        "location": {
+          "address": "Gordon Beach, Tel Aviv"
+        },
+        "primaryBeaches": ["gordon"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

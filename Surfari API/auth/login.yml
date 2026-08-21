@@ -1,0 +1,51 @@
+info:
+  name: login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/auth/login"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "surfari@yopmail.com",
+        "password": "Flexsin@123"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        const response = res.getBody();
+
+        if (response.status === "success") {
+          const accessToken = response.data?.auth?.accessToken;
+          const refreshToken = response.data?.auth?.refreshToken;
+
+          if (!accessToken) {
+            console.log("accessToken is missing from the response");
+          }
+
+          // Save in the currently active environment
+          bru.setEnvVar("TOKEN", `Bearer ${accessToken}`);
+
+          if (refreshToken) {
+            bru.setEnvVar("REFRESH_TOKEN", refreshToken);
+          }
+
+          console.log("Authentication successful. Tokens saved.");
+          
+        } else {
+          console.error(`Authentication failed: ${response.message}`);
+          
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

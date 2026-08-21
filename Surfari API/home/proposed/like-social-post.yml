@@ -1,0 +1,22 @@
+info:
+  name: like-social-post
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/home/social-feed/1/like"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  body:
+    type: json
+    data: "{}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

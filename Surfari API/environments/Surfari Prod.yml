@@ -1,0 +1,10 @@
+name: Surfari Prod
+variables:
+  - name: BASE_URL
+    value: https://api.surfari.flexsin.org/api/v1
+  - name: TOKEN
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJhNGU3NjkyYS1mZjQ0LTRhNTMtYWVlMy1mM2EzZDJhZDU4YWYiLCJpYXQiOjE3ODcyODgyODMsImV4cCI6MTc4NzI5MTg4M30.AS9-twMl_vLAcugCfppuiELSAjSJaeLFZzoBmPPPy_U
+  - name: REFRESH_TOKEN
+    value: rt_4814b6f8b5ee687818e9ad54a3f678940a34a0dd97a928b5d1a816164c5cb08e
+  - name: AUTH_ERROR
+    value: Invalid email/phone number or password

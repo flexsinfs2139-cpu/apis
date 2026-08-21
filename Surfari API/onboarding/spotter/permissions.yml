@@ -1,0 +1,28 @@
+info:
+  name: permissions
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{BASE_URL}}/onboarding/spotter/permissions"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  body:
+    type: json
+    data: |-
+      {
+        "essential": true,
+        "marketingAndAds": false,
+        "personalization": true,
+        "analytics": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

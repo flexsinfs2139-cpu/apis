@@ -1,0 +1,31 @@
+info:
+  name: start-session-live
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/sessions"
+  headers:
+    - name: Authorization
+      value: Bearer {{TOKEN}}
+  body:
+    type: json
+    data: |-
+      {
+        "spotId": "hilton",
+        "mode": "live",
+        "location": {
+          "lat": 12.345678,
+          "lng": 78.901234,
+          "accuracyM": 8.5
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
