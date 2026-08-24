@@ -2,11 +2,16 @@ name: Sufari Dev
 variables:
   - name: BASE_URL
     value: http://100.100.7.63:3006/api/v1
+    description: ""
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ZTgyMzQ0Ny0yZTc3LTRkYWUtOWQ1ZS04ZjY5ZGZkYTAyYTYiLCJpYXQiOjE3ODcyOTIwMzcsImV4cCI6MTc4NzI5NTYzN30.TTZBr9r8FZL6KtqLN99co4W2TNpSQS6sg9qvxanz5aY
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ZTgyMzQ0Ny0yZTc3LTRkYWUtOWQ1ZS04ZjY5ZGZkYTAyYTYiLCJpYXQiOjE3ODczMDM2NDAsImV4cCI6MTc4NzMwNzI0MH0._eIl-OX6UFGWDIf4v32cNKYX2r1jVtJYXFwxzBIWAFA
+    description: ""
   - name: REFRESH_TOKEN
-    value: rt_944daa888982ae34cd15ef0e72c673cea2c062d0f094e5928aab26cc0ecee88e
+    value: rt_efb443ba642df8524f410be6256d78483354c7e5c319a7736702796ff9f9bf1d
+    description: ""
   - name: FORGET_PASS_TOKEN
     value: 77898c2901fd2dd3e3ec072530a8b1c3bcb7a30a1fe30a77
+    description: ""
   - name: PASSWORD
     value: Flexsin@123
+    description: ""

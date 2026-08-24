@@ -10,13 +10,13 @@ http:
     type: json
     data: |-
       {
-        "email": "surfer@example.com",
-        "password": "P@ssw0rd!",
+        "email": "allare1@example.com",
+        "password": "{{PASSWORD}}",
         "languageCode": "en",
         "regionCode": "IL",
-        "firstName": "Dana",
-        "lastName": "Cohen",
-        "phoneNumber": "+972501234567",
+        "firstName": "Ravi",
+        "lastName": "Kant",
+        "phoneNumber": "+919793487932",
         "consents": {
           "marketing": true,
           "personalisation": true,

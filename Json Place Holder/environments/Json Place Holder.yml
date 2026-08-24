@@ -1,0 +1,5 @@
+name: Json Place Holder
+variables:
+  - name: BASE_URL
+    value: https://jsonplaceholder.typicode.com
+    description: ""

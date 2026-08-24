@@ -1,22 +1,20 @@
 info:
-  name: log-retroactive-session
+  name: start session
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
   url: "{{BASE_URL}}/sessions"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: "{{TOKEN}}"
   body:
     type: json
     data: |-
       {
-        "spotId": "hilton",
-        "mode": "retroactive",
-        "startedAt": "2026-08-19T07:00:00Z",
-        "endedAt": "2026-08-19T08:45:00Z"
+        "spotId": "dXJuOm1ieHBvaTpmOWI5YmE1ZC04NGMzLTRmYmEtOTQ0ZC1hMDIxYTE4ZTc5MGM",
+        "mode": "live"
       }
   auth: inherit
 

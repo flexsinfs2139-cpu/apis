@@ -1,0 +1,5 @@
+name: Dummy Json
+variables:
+  - name: BASE_URL
+    value: https://dummyjson.com
+    description: ""
