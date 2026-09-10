@@ -3,9 +3,9 @@ variables:
   - name: BASE_URL
     value: https://api.surfari.flexsin.org/api/v1
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJhNDQ2NTFlNi00OTdkLTQ2ODEtOGI1Yy02Y2YwYmQ3ZDRhYTgiLCJpYXQiOjE3ODkwMTU5NzIsImV4cCI6MTc4OTEwMjM3Mn0.npIy-4lyLYo4ey-2toHvBL3Ah0WRKSJofmJ5__nAdF4
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJhNDQ2NTFlNi00OTdkLTQ2ODEtOGI1Yy02Y2YwYmQ3ZDRhYTgiLCJpYXQiOjE3ODkwMzc3NjIsImV4cCI6MTc4OTEyNDE2Mn0.IYodm6mVR33CQAOe3AiRg8mk-UqnlIHF8MrupSJw_ho
   - name: REFRESH_TOKEN
-    value: rt_b2dfc6c283661b4c22c5373109546cbba060d306893c3cc8642b4dead803e814
+    value: rt_d3fb831f0aff01dd567b38592849f98ab11213e3f0b2a55fa4ed39c90e4a849c
   - name: FORGET_PASS_TOKEN
     value: b8aef18b7599810d9f2f744f70e994ec3795fab423ac83de
   - name: PASSWORD
