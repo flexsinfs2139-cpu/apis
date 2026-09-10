@@ -1,27 +1,21 @@
 info:
-  name: Fetch Spots
+  name: Fetch Nearby
   type: http
-  seq: 8
+  seq: 2
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots"
+  url: "{{BASE_URL}}/nearby-spots?latitude=32.0886&longitude=34.7672"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
-    - name: search
-      value: Hilton
+    - name: latitude
+      value: "32.0886"
       type: query
-      disabled: true
-    - name: lat
-      value: "32.0854523665"
+    - name: longitude
+      value: "34.7672"
       type: query
-      disabled: true
-    - name: lng
-      value: "34.7701226894"
-      type: query
-      disabled: true
   auth: inherit
 
 settings:

@@ -5,22 +5,22 @@ info:
 
 http:
   method: GET
-  url: https://marine-api.open-meteo.com/v1/marine?latitude=32.0839&longitude=34.7654&hourly=wave_height,wave_period,wave_direction,swell_wave_height,swell_wave_period,swell_wave_direction,wind_wave_height,wind_wave_period,wind_wave_direction,sea_surface_temperature,sea_level_height_msl&forecast_days=1&timezone=auto
+  url: https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m&past_days=10
   params:
     - name: latitude
-      value: "32.0839"
+      value: "52.52"
       type: query
     - name: longitude
-      value: "34.7654"
+      value: "13.41"
+      type: query
+    - name: current
+      value: temperature_2m,wind_speed_10m
       type: query
     - name: hourly
-      value: wave_height,wave_period,wave_direction,swell_wave_height,swell_wave_period,swell_wave_direction,wind_wave_height,wind_wave_period,wind_wave_direction,sea_surface_temperature,sea_level_height_msl
+      value: temperature_2m,relative_humidity_2m,wind_speed_10m
       type: query
-    - name: forecast_days
-      value: "1"
-      type: query
-    - name: timezone
-      value: auto
+    - name: past_days
+      value: "10"
       type: query
   auth: inherit
 

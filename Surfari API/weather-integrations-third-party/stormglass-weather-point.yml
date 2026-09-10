@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: https://api.stormglass.io/v2/weather/point?lat=32.0839&lng=34.7654&params=waveHeight,swellHeight,swellPeriod,swellDirection,wavePeriod,waveDirection,windWaveHeight,windWavePeriod,windWaveDirection,windSpeed,windDirection,gust,waterTemperature,airTemperature,precipitation,seaLevel&source=sg
+  url: https://api.stormglass.io/v2/weather/point?lat=32.0839&lng=34.7654&params=airTemperature,cloudCover,currentDirection,currentSpeed,dewPointTemperature,graupel,gust,humidity,iceCover,precipitation,pressure,rain,seaIceThickness,seaLevel,secondarySwellDirection,secondarySwellHeight,secondarySwellPeriod,snow,snowAlbedo,snowDepth,surfaceTemperature,waterTemperature,swellDirection,swellHeight,swellPeriod,visibility,waveDirection,waveHeight,wavePeriod,windDirection,windSpeed,windWaveDirection,windWaveHeight,windWavePeriod&source=sg&start=2026-09-10T00:00:00Z&end=2026-09-10T01:00:00Z
   headers:
     - name: Authorization
-      value: <stormglass-api-key>
+      value: c118f3b6-8c4c-11f1-b11b-0242ac120004-c118f424-8c4c-11f1-b11b-0242ac120004
   params:
     - name: lat
       value: "32.0839"
@@ -17,10 +17,16 @@ http:
       value: "34.7654"
       type: query
     - name: params
-      value: waveHeight,swellHeight,swellPeriod,swellDirection,wavePeriod,waveDirection,windWaveHeight,windWavePeriod,windWaveDirection,windSpeed,windDirection,gust,waterTemperature,airTemperature,precipitation,seaLevel
+      value: airTemperature,cloudCover,currentDirection,currentSpeed,dewPointTemperature,graupel,gust,humidity,iceCover,precipitation,pressure,rain,seaIceThickness,seaLevel,secondarySwellDirection,secondarySwellHeight,secondarySwellPeriod,snow,snowAlbedo,snowDepth,surfaceTemperature,waterTemperature,swellDirection,swellHeight,swellPeriod,visibility,waveDirection,waveHeight,wavePeriod,windDirection,windSpeed,windWaveDirection,windWaveHeight,windWavePeriod
       type: query
     - name: source
       value: sg
+      type: query
+    - name: start
+      value: 2026-09-10T00:00:00Z
+      type: query
+    - name: end
+      value: 2026-09-10T01:00:00Z
       type: query
   auth: inherit
 

@@ -24,8 +24,8 @@ http:
           "longitude": 34.7654,
           "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0839,34.7654"
         },
-        "skillLevel": "intermediate",
-        "frequency": "weekly"
+        "skillLevel": "",
+        "frequency": ""
       }
   auth: inherit
 
