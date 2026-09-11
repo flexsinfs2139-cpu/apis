@@ -1,20 +1,17 @@
 info:
-  name: Fetch Nearby
+  name: forecast incoming swell
   type: http
-  seq: 2
+  seq: 8
 
 http:
   method: GET
-  url: "{{BASE_URL}}/nearby-spots?latitude=32.0886&longitude=34.7672"
+  url: "{{BASE_URL}}/spots/incoming-swell?id=320d05a0-7b64-435f-b803-f9c0e79177c6"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
-    - name: latitude
-      value: "32.0886"
-      type: query
-    - name: longitude
-      value: "34.7672"
+    - name: id
+      value: 320d05a0-7b64-435f-b803-f9c0e79177c6
       type: query
   auth: inherit
 

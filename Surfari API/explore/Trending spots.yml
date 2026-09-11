@@ -1,20 +1,26 @@
 info:
-  name: Spot UV Index Matrics
+  name: Trending spots
   type: http
-  seq: 5
+  seq: 2
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spot-uvIndex-matrices?lat=32.0854523665&lng=34.7701226894"
+  url: "{{BASE_URL}}/explore/trending-spots?lat=32.085452&lng=34.770123&page=1&pageSize=2"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
     - name: lat
-      value: "32.0854523665"
+      value: "32.085452"
       type: query
     - name: lng
-      value: "34.7701226894"
+      value: "34.770123"
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "2"
       type: query
   auth: inherit
 

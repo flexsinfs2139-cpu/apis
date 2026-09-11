@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m&past_days=10
+  url: https://api.open-meteo.com/v1/forecast?latitude={{LATITUDE}}&longitude={{LONGITUDE}}&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m
   params:
     - name: latitude
-      value: "52.52"
+      value: "{{LATITUDE}}"
       type: query
     - name: longitude
-      value: "13.41"
+      value: "{{LONGITUDE}}"
       type: query
     - name: current
       value: temperature_2m,wind_speed_10m
@@ -22,6 +22,7 @@ http:
     - name: past_days
       value: "10"
       type: query
+      disabled: true
   auth: inherit
 
 settings:

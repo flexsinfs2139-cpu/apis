@@ -1,21 +1,14 @@
 info:
-  name: Spot Matrics
+  name: Surf School Videos id
   type: http
-  seq: 3
+  seq: 5
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spot-matrics?lat=32.0854523665&lng=34.7701226894"
+  url: "{{BASE_URL}}/explore/surf-school/videos/1"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
-  params:
-    - name: lat
-      value: "32.0854523665"
-      type: query
-    - name: lng
-      value: "34.7701226894"
-      type: query
   auth: inherit
 
 settings:

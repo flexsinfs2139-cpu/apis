@@ -5,16 +5,22 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/nearby-spots?lat=32.0839&lng=34.7654"
+  url: "{{BASE_URL}}/home/nearby-spots?lat={{LATITUDE}}&lng={{LONGITUDE}}&page=1&pageSize=2"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
     - name: lat
-      value: "32.0839"
+      value: "{{LATITUDE}}"
       type: query
     - name: lng
-      value: "34.7654"
+      value: "{{LONGITUDE}}"
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "2"
       type: query
   auth: inherit
 

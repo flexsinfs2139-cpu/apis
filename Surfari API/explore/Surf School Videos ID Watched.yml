@@ -1,0 +1,19 @@
+info:
+  name: Surf School Videos ID Watched
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/explore/surf-school/videos/1/watched"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

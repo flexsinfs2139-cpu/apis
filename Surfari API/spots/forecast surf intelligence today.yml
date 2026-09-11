@@ -1,0 +1,23 @@
+info:
+  name: forecast surf intelligence today
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/pro/forecast-surf-intelligence-today?id=320d05a0-7b64-435f-b803-f9c0e79177c6"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  params:
+    - name: id
+      value: 320d05a0-7b64-435f-b803-f9c0e79177c6
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
