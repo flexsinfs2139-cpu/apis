@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots/incoming-swell?id=320d05a0-7b64-435f-b803-f9c0e79177c6"
+  url: "{{BASE_URL}}/spots/incoming-swell?id={{SPOT_ID}}"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
     - name: id
-      value: 320d05a0-7b64-435f-b803-f9c0e79177c6
+      value: "{{SPOT_ID}}"
       type: query
   auth: inherit
 

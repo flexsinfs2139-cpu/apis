@@ -1,11 +1,11 @@
 info:
-  name: surf forecast
+  name: forecast surf together 16 day
   type: http
-  seq: 11
+  seq: 15
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots/surf-forecast?id=320d05a0-7b64-435f-b803-f9c0e79177c6&lat={{LATITUDE}}&lng={{LONGITUDE}}"
+  url: "{{BASE_URL}}/spots/surf-together-16day?id=320d05a0-7b64-435f-b803-f9c0e79177c6&lat={{LATITUDE}}&lng={{LONGITUDE}}"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -19,10 +19,6 @@ http:
     - name: lng
       value: "{{LONGITUDE}}"
       type: query
-    - name: date
-      value: 2026-09-14
-      type: query
-      disabled: true
   auth: inherit
 
 settings:
