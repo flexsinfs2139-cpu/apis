@@ -1,18 +1,14 @@
 info:
-  name: Untitled
+  name: Doctor Profile
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: GET
-  url: https://clinikio.com/v1/api/account/state/103/?search=
+  url: "{{BASE_URL}}/doctor/profile"
   headers:
     - name: Authorization
-      value: Token 2d9cb78cb5177d5e17ba9fadb79addb0440d2de1
-  params:
-    - name: search
-      value: ""
-      type: query
+      value: Token 3b03a0bd7885ba3240e215f3441a0942928b5754
   auth: inherit
 
 settings:

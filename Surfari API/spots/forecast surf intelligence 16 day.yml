@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/pro/forecast-surf-intelligence-16day?id=320d05a0-7b64-435f-b803-f9c0e79177c6&lat={{LATITUDE}}&lng={{LONGITUDE}}"
+  url: "{{BASE_URL}}/pro/forecast-surf-intelligence-16day?id={{SPOT_ID}}&lat={{LATITUDE}}&lng={{LONGITUDE}}"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
     - name: id
-      value: 320d05a0-7b64-435f-b803-f9c0e79177c6
+      value: "{{SPOT_ID}}"
       type: query
     - name: lat
       value: "{{LATITUDE}}"

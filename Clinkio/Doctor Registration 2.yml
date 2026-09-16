@@ -1,0 +1,33 @@
+info:
+  name: Doctor Registration 2
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/doctor/profile-step-two"
+  headers:
+    - name: Authorization
+      value: Token a16ec72b35f8cd60f756a0498fbce5b8a36374f7
+  body:
+    type: json
+    data: |-
+      {
+          "regname_1": "13456",
+          "country_1": 235,
+          "awardingname_1": "Aiims",
+          "year_1": "2000",
+          "certificate_1": {
+            "uri": "file:///data/user/0/com.clinikio/cache/Camera/9b52deff-242d-41cb-990f-b139393115fb.jpg",
+            "name": "image_1789470641083.jpg",
+            "type": "image/jpeg"
+          }
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

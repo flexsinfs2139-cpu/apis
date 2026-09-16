@@ -1,18 +1,14 @@
 info:
-  name: spot currents
+  name: Spot Detail
   type: http
-  seq: 13
+  seq: 10
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots/currents?id={{SPOT_ID}}"
+  url: "{{BASE_URL}}/explore/spots/{{SPOT_ID}}/detail"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
-  params:
-    - name: id
-      value: "{{SPOT_ID}}"
-      type: query
   auth: inherit
 
 settings:

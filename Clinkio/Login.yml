@@ -1,0 +1,29 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/account/login"
+  headers:
+    - name: Authorization
+      value: Token 2d9cb78cb5177d5e17ba9fadb79addb0440d2de1
+  body:
+    type: json
+    data: |-
+      {
+        "username": "sanchitdoctor@yopmail.com",
+        "password": "Flexsin@123",
+        "time_zone": "Asia/Calcutta",
+        "city": "NA",
+        "fcm_token": "0"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

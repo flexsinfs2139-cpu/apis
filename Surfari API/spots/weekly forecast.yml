@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots/weekly-overview?id=320d05a0-7b64-435f-b803-f9c0e79177c6&lat={{LATITUDE}}&lng={{LONGITUDE}}"
+  url: "{{BASE_URL}}/spots/weekly-overview?id=320d05a0-7b64-435f-b803-f9c0e79177c6&lat={{LATITUDE}}&lng={{LONGITUDE}}&date="
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -20,9 +20,8 @@ http:
       value: "{{LONGITUDE}}"
       type: query
     - name: date
-      value: 2026-09-11
+      value: ""
       type: query
-      disabled: true
   auth: inherit
 
 settings:

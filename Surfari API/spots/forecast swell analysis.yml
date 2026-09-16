@@ -5,13 +5,19 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots/forecast-swell-analysis?id=320d05a0-7b64-435f-b803-f9c0e79177c6"
+  url: "{{BASE_URL}}/spots/forecast-swell-analysis?id={{SPOT_ID}}&lat={{LATITUDE}}&lng={{LONGITUDE}}"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
     - name: id
-      value: 320d05a0-7b64-435f-b803-f9c0e79177c6
+      value: "{{SPOT_ID}}"
+      type: query
+    - name: lat
+      value: "{{LATITUDE}}"
+      type: query
+    - name: lng
+      value: "{{LONGITUDE}}"
       type: query
   auth: inherit
 

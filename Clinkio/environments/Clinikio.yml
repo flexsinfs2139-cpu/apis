@@ -1,0 +1,5 @@
+name: Clinikio
+variables:
+  - name: BASE_URL
+    value: https://clinikio.com/v1/api
+    description: ""
