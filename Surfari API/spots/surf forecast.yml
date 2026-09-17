@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots/surf-forecast?id={{SPOT_ID}}&lat={{LATITUDE}}&lng={{LONGITUDE}}&date=2026-09-16"
+  url: "{{BASE_URL}}/spots/surf-forecast?id={{SPOT_ID}}&lat={{LATITUDE}}&lng={{LONGITUDE}}&date=2026-09-19"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -20,7 +20,7 @@ http:
       value: "{{LONGITUDE}}"
       type: query
     - name: date
-      value: 2026-09-16
+      value: 2026-09-19
       type: query
   auth: inherit
 

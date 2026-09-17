@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/nearby-spots?lat={{LATITUDE}}&lng={{LONGITUDE}}&page=1"
+  url: "{{BASE_URL}}/home/nearby-spots?lat={{LATITUDE}}&lng={{LONGITUDE}}&page=1&pageSize=2"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -22,7 +22,6 @@ http:
     - name: pageSize
       value: "2"
       type: query
-      disabled: true
   auth: inherit
 
 settings:

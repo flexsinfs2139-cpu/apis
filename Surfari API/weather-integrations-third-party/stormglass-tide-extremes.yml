@@ -5,22 +5,22 @@ info:
 
 http:
   method: GET
-  url: https://api.stormglass.io/v2/tide/extremes/point?lat=32.0839&lng=34.7654&start=2026-09-10T00:00:00Z&end=2026-09-10T23:00:00Z
+  url: https://api.stormglass.io/v2/tide/extremes/point?lat=33.0482&lng=35.1014&start=2026-09-19T00:00:00Z&end=2026-09-19T23:00:00Z
   headers:
     - name: Authorization
       value: c118f3b6-8c4c-11f1-b11b-0242ac120004-c118f424-8c4c-11f1-b11b-0242ac120004
   params:
     - name: lat
-      value: "32.0839"
+      value: "33.0482"
       type: query
     - name: lng
-      value: "34.7654"
+      value: "35.1014"
       type: query
     - name: start
-      value: 2026-09-10T00:00:00Z
+      value: 2026-09-19T00:00:00Z
       type: query
     - name: end
-      value: 2026-09-10T23:00:00Z
+      value: 2026-09-19T23:00:00Z
       type: query
   auth: inherit
 
