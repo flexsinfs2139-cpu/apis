@@ -1,17 +1,18 @@
 info:
-  name: resend-otp
+  name: Verify OTP
   type: http
-  seq: 5
+  seq: 2
 
 http:
   method: POST
-  url: "{{BASE_URL}}/auth/resend-otp"
-  headers:
-    - name: Authorization
-      value: "{{TOKEN}}"
+  url: "{{BASE_URL}}/verify-otp"
   body:
     type: json
-    data: ""
+    data: |-
+      {
+        "mobile": "91886-073-3786",
+        "code": "164380"
+      }
   auth: inherit
 
 settings:

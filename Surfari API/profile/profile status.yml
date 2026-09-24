@@ -1,18 +1,14 @@
 info:
-  name: spot-details
+  name: profile status
   type: http
   seq: 2
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/spot-details?beachId=gordon-beach"
+  url: "{{BASE_URL}}/profile/status"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
-  params:
-    - name: beachId
-      value: gordon-beach
-      type: query
+      value: "{{TOKEN}}"
   auth: inherit
 
 settings:

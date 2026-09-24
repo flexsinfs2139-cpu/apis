@@ -1,24 +1,30 @@
 info:
-  name: fetch spots
+  name: Live Map Spots
   type: http
-  seq: 7
+  seq: 12
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots?lat={{LATITUDE}}&lng={{LONGITUDE}}"
+  url: "{{BASE_URL}}/explore/spots/?lat={{LATITUDE}}&lng={{LONGITUDE}}&page=1&limit=50"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
   params:
-    - name: search
-      value: Hilton
-      type: query
-      disabled: true
     - name: lat
       value: "{{LATITUDE}}"
       type: query
     - name: lng
       value: "{{LONGITUDE}}"
+      type: query
+    - name: query
+      value: Hilton
+      type: query
+      disabled: true
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "50"
       type: query
   auth: inherit
 

@@ -1,17 +1,17 @@
 info:
-  name: resend-otp
+  name: Send OTP
   type: http
-  seq: 5
+  seq: 1
 
 http:
   method: POST
-  url: "{{BASE_URL}}/auth/resend-otp"
-  headers:
-    - name: Authorization
-      value: "{{TOKEN}}"
+  url: "{{BASE_URL}}/send-otp"
   body:
     type: json
-    data: ""
+    data: |-
+      {
+        "mobile": "91886-073-3786"
+      }
   auth: inherit
 
 settings:

@@ -1,0 +1,5 @@
+name: Automatted Dispatch
+variables:
+  - name: BASE_URL
+    value: https://adambulette.com/api/patient-portal
+    description: ""

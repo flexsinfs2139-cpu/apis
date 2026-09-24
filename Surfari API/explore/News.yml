@@ -5,10 +5,17 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/explore/news"
+  url: "{{BASE_URL}}/explore/news?page=1&limit=2"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "2"
+      type: query
   auth: inherit
 
 settings:

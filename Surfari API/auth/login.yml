@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "email": "allare1@yopmail.com",
+        "email": "allaretest@yopmail.com",
         // flexsinfs2139@gmail.com
         "password": "{{PASSWORD}}"
       }

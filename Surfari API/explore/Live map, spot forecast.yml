@@ -1,17 +1,14 @@
 info:
-  name: like-social-post
+  name: Live map, spot forecast
   type: http
-  seq: 5
+  seq: 13
 
 http:
-  method: POST
-  url: "{{BASE_URL}}/home/social-feed/1/like"
+  method: GET
+  url: "{{BASE_URL}}/explore/spots/{{SPOT_ID}}/forecast"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
-  body:
-    type: json
-    data: "{}"
+      value: "{{TOKEN}}"
   auth: inherit
 
 settings:
