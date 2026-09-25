@@ -1,0 +1,26 @@
+info:
+  name: me/my-spots
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/me/my-spots?page=2&limit=10"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  params:
+    - name: page
+      value: "2"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
