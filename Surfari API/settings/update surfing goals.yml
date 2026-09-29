@@ -1,0 +1,29 @@
+info:
+  name: update surfing goals
+  type: http
+  seq: 9
+
+http:
+  method: PATCH
+  url: "{{BASE_URL}}/settings/surfing/surf-goals"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  body:
+    type: json
+    data: |-
+      {
+        "surfGoals": [
+          "Improve my pop-up",
+          "Surf a reef break",
+          "Try a longboard"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

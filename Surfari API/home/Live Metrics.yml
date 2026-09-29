@@ -1,0 +1,19 @@
+info:
+  name: Live Metrics
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/home/live-metrics"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

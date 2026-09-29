@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/spots?lat={{LATITUDE}}&lng={{LONGITUDE}}"
+  url: "{{BASE_URL}}/spots?search=Hilton"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -13,13 +13,14 @@ http:
     - name: search
       value: Hilton
       type: query
-      disabled: true
     - name: lat
       value: "{{LATITUDE}}"
       type: query
+      disabled: true
     - name: lng
       value: "{{LONGITUDE}}"
       type: query
+      disabled: true
   auth: inherit
 
 settings:

@@ -1,0 +1,39 @@
+info:
+  name: update surfing board quiver
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{BASE_URL}}/settings/surfing/board-quiver"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  body:
+    type: json
+    data: |-
+      {
+        "boards": [
+          {
+            "id": "brd_existing_1",
+            "name": "My Shortboard",
+            "type": "shortboard",
+            "details": "6'2\" · 30L",
+            "note": "daily driver",
+            "favorite": true
+          },
+          {
+            "name": "New Fish",
+            "type": "fish",
+            "favorite": false
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

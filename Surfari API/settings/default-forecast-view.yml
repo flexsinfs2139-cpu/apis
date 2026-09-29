@@ -1,0 +1,25 @@
+info:
+  name: default-forecast-view
+  type: http
+  seq: 10
+
+http:
+  method: PATCH
+  url: "{{BASE_URL}}/settings/default-forecast-view"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  body:
+    type: json
+    data: |-
+      {
+        "defaultForecastView": "graph"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
