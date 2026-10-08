@@ -1,12 +1,17 @@
 name: Sufari Dev
 variables:
   - name: BASE_URL
-    value: http://100.100.7.63:3006/api/v1
+    value: http://localhost:4000/api/v1
+    description: ""
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ZTgyMzQ0Ny0yZTc3LTRkYWUtOWQ1ZS04ZjY5ZGZkYTAyYTYiLCJpYXQiOjE3ODc2MzYxMjcsImV4cCI6MTc4NzYzOTcyN30.0TefhQj7rQVeMgXUF7wFIsVKo8ZPcc-L5m2LNbC65pI
+    value: ""
+    description: ""
   - name: REFRESH_TOKEN
-    value: rt_956c6ced72455a4c21088f94d057df5bfbb1055b8e29f143305e13c65a689ca3
+    value: ""
+    description: ""
   - name: FORGET_PASS_TOKEN
-    value: 77898c2901fd2dd3e3ec072530a8b1c3bcb7a30a1fe30a77
+    value: ""
+    description: ""
   - name: PASSWORD
     value: Flexsin@123
+    description: ""

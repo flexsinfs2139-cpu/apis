@@ -10,8 +10,15 @@ http:
     type: json
     data: |-
       {
+<<<<<<< Updated upstream
         "email": "allaretest01@yopmail.com",
       //   "phoneNumber": "8860733786",
+||||||| Stash base
+        "email": "allaretest@yopmail.com",
+=======
+        "email": "allaretest@yopmail.com",
+      //   "phoneNumber": "8860733786",
+>>>>>>> Stashed changes
         // flexsinfs2139@gmail.com
         "password": "{{PASSWORD}}"
       }

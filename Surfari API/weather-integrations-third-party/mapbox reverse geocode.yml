@@ -1,0 +1,35 @@
+info:
+  name: mapbox reverse geocode
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: https://api.mapbox.com/search/searchbox/v1/reverse?access_token={{MAPBOX_KEY}}&longitude=34.979342&latitude=32.835466&language=en&limit=1&types=place
+  params:
+    - name: access_token
+      value: "{{MAPBOX_KEY}}"
+      type: query
+    - name: longitude
+      value: "34.979342"
+      type: query
+    - name: latitude
+      value: "32.835466"
+      type: query
+    - name: language
+      value: en
+      type: query
+    - name: limit
+      value: "1"
+      type: query
+    - name: types
+      value: place
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

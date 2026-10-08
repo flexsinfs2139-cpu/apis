@@ -5,10 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/live-status"
+  url: "{{BASE_URL}}/home/live-status?spotId={{SPOT_ID}}"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
+  params:
+    - name: spotId
+      value: "{{SPOT_ID}}"
+      type: query
   auth: inherit
 
 settings:
