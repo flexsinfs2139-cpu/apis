@@ -1,18 +1,14 @@
 info:
-  name: Live Metrics
+  name: Surfing Goals copy
   type: http
-  seq: 5
+  seq: 14
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/live-metrics?spotId={{SPOT_ID}}"
+  url: "{{BASE_URL}}/settings/surfing/board-quiver"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
-  params:
-    - name: spotId
-      value: "{{SPOT_ID}}"
-      type: query
   auth: inherit
 
 settings:

@@ -1,18 +1,14 @@
 info:
-  name: Live Metrics
+  name: explore map spots
   type: http
-  seq: 5
+  seq: 12
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/live-metrics?spotId={{SPOT_ID}}"
+  url: "{{BASE_URL}}/explore/live-map/spots"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
-  params:
-    - name: spotId
-      value: "{{SPOT_ID}}"
-      type: query
   auth: inherit
 
 settings:

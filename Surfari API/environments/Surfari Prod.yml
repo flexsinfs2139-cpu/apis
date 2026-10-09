@@ -3,23 +3,11 @@ variables:
   - name: BASE_URL
     value: https://api.surfari.flexsin.org/api/v1
   - name: TOKEN
-<<<<<<< Updated upstream
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzYWIwZjU3YS05NmQzLTRmYTUtYjQyZi02NmY3OThiMjE0MDkiLCJpYXQiOjE3OTA2NzA1MjcsImV4cCI6MTc5MDc1NjkyN30.XrpAqTvjuWDLVeDv_V0k30NSp9SL5lgqkLHKpn3fPg0
-||||||| Stash base
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJjN2Q3NTIxNy00MmJkLTRlMmYtYjllYy1iMjcyNmU1YzRmNjgiLCJpYXQiOjE3OTAyNDM5NTYsImV4cCI6MTc5MDMzMDM1Nn0.VPt1q6Y7royRAOAPxNMGjx0gnawTM_8XtRA8VTtlcwg
-=======
-    value:
->>>>>>> Stashed changes
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJjN2Q3NTIxNy00MmJkLTRlMmYtYjllYy1iMjcyNmU1YzRmNjgiLCJpYXQiOjE3OTE1MzYwMTUsImV4cCI6MTc5MTYyMjQxNX0.p8Y-1-TaoFFbX-2v65YkNvsKABL_oMO_jHMs61Fwgdc
   - name: REFRESH_TOKEN
-<<<<<<< Updated upstream
-    value: rt_f47ebc1253468500f51b8758ef8a57b8b58144b72d0640438a827d1e454902d4
-||||||| Stash base
-    value: rt_ec200de80c6a8c8316f2aecc925332fd14dbe165f52d1aa67f084232c0575139
-=======
-    value:
->>>>>>> Stashed changes
+    value: rt_17d57fa4ddfff73547ac24065565ee07824bcf3fd7c328475b28961d4b885bd4
   - name: FORGET_PASS_TOKEN
-    value:
+    value: ""
   - name: PASSWORD
     value: Flexsin@123
   - name: LATITUDE
@@ -27,12 +15,6 @@ variables:
   - name: LONGITUDE
     value: "34.979342"
   - name: SPOT_ID
-<<<<<<< Updated upstream
-    value: 1aaa9840-41ff-4269-85dd-c89b667a0359
-||||||| Stash base
-    value: 0af41474-bd82-4bf7-9e80-dd4986bf2be5
-=======
-    value: 1aaa9840-41ff-4269-85dd-c89b667a0359
+    value: 11fdfc94-f03e-4670-832c-3ba0410d2351
   - name: MAPBOX_KEY
-    value:
->>>>>>> Stashed changes
+    value: ""
