@@ -10,19 +10,25 @@ http:
     type: json
     data: |-
       {
-        "email": "allare21@example.com",
+        "email": "spotter.test@example.com",
         "password": "{{PASSWORD}}",
         "languageCode": "en",
         "regionCode": "IL",
-        "firstName": "Ravi",
-        "lastName": "Kant",
-        "phoneNumber": "9793487932",
+        "firstName": "Spotter",
+        "lastName": "Test",
+        "phoneNumber": "1234567890",
         "consents": {
           "marketing": true,
           "personalisation": true,
           "analytics": true
         }
       }
+
+
+      // Surfer - surfer.test@example.com
+      // Spotter - spotter.test@example.com
+      // Photographer - photographer.test@example.com
+      // Business - business.test@example.com
   auth: inherit
 
 runtime:

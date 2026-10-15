@@ -1,0 +1,30 @@
+info:
+  name: fetch notifications
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/notifications?page=1&limit=2"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "2"
+      type: query
+    - name: category
+      value: surf
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

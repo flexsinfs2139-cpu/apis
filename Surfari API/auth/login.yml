@@ -10,9 +10,7 @@ http:
     type: json
     data: |-
       {
-        "email": "allaretest@yopmail.com",
-      //   "phoneNumber": "8860733786",
-        // flexsinfs2139@gmail.com
+        "email": "spotter.test@example.com",
         "password": "{{PASSWORD}}"
       }
   auth: inherit
