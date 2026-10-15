@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/notifications?page=1&limit=2"
+  url: "{{BASE_URL}}/notifications?page=1"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -16,6 +16,7 @@ http:
     - name: limit
       value: "2"
       type: query
+      disabled: true
     - name: category
       value: surf
       type: query

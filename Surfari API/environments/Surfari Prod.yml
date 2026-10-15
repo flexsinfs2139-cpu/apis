@@ -3,18 +3,18 @@ variables:
   - name: BASE_URL
     value: https://api.surfari.flexsin.org/api/v1
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODgwNTY3Ni0yNTc2LTQ1ZGItODEzNi1jN2M0MjFmOTkxOGYiLCJpYXQiOjE3OTIwNTAzNjcsImV4cCI6MTc5MjEzNjc2N30.3kP58ydy_7davDTZm1riY6guNwePWHGKd-Cm_NS_nQk
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzMzU0NmNmZi1jYjJkLTQxMjMtODE0ZC0yYmYwNGQ2OGZjOTIiLCJpYXQiOjE3OTIwNzIxNzMsImV4cCI6MTc5MjE1ODU3M30.A1mv09we8vHUZQOn8MPfDG0N9yyBQu0Miv8eSQpoais
   - name: REFRESH_TOKEN
-    value: rt_b151badfdcc4a60a4cbabb8f3aa25a6804eba3634bd5983d488ac477fb5e308b
+    value: rt_3e3c891aae8fc129ffd310bf5608bd3ed831f0e0667a66fc7abd8bd8854b9104
   - name: FORGET_PASS_TOKEN
     value: cb15e23033eaa1aedf504743df0efcf23f80cbdf477d94c4
   - name: PASSWORD
     value: Flexsin@123
   - name: LATITUDE
-    value: "32.835466"
+    value: "33.08056"
   - name: LONGITUDE
-    value: "34.979342"
+    value: " 35.104914"
   - name: SPOT_ID
-    value: 11fdfc94-f03e-4670-832c-3ba0410d2351
+    value: 59365eeb-6c4b-404b-a659-d953faea447b
   - name: MAPBOX_KEY
     value: ""
