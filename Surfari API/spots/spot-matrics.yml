@@ -16,6 +16,10 @@ http:
     - name: lng
       value: "{{LONGITUDE}}"
       type: query
+    - name: date
+      value: 2026-10-17
+      type: query
+      disabled: true
   auth: inherit
 
 settings:
