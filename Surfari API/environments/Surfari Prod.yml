@@ -3,9 +3,9 @@ variables:
   - name: BASE_URL
     value: https://api.staging.surfari.dev/api/v1
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzMzU0NmNmZi1jYjJkLTQxMjMtODE0ZC0yYmYwNGQ2OGZjOTIiLCJpYXQiOjE3OTI0NTY0MjMsImV4cCI6MTc5MjU0MjgyM30.-3_yfEl_MKVfF09JRkNLVmuI8CfOr3-TevtZH9jqBa8
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzMzU0NmNmZi1jYjJkLTQxMjMtODE0ZC0yYmYwNGQ2OGZjOTIiLCJpYXQiOjE3OTI0OTg2NDgsImV4cCI6MTc5MjU4NTA0OH0.lXXyVC7OHg_P6eEqEpneVHYQgz5JD5B3xJpj4xt8hNI
   - name: REFRESH_TOKEN
-    value: rt_d2a9c497c20578f8cb07cad18b21f5c544d75e0a9c4284a35e6d6de36e3151aa
+    value: rt_eb7bd4ffe7095dca76e909f6e0005a4429c179da3dbccd0d0559112da9a41d88
   - name: FORGET_PASS_TOKEN
     value: cb15e23033eaa1aedf504743df0efcf23f80cbdf477d94c4
   - name: PASSWORD
