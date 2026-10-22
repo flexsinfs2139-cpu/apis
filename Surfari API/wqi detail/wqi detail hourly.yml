@@ -1,0 +1,19 @@
+info:
+  name: wqi detail hourly
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/wqi/detail/hourly"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,23 @@
+info:
+  name: today forecast
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/home/today-forecast?spotId={{SPOT_ID}}"
+  headers:
+    - name: Authorization
+      value: "{{TOKEN}}"
+  params:
+    - name: spotId
+      value: "{{SPOT_ID}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

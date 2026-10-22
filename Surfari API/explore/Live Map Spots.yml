@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/explore/spots/?lat={{LATITUDE}}&lng={{LONGITUDE}}&page=1&limit=50"
+  url: "{{BASE_URL}}/explore/spots/?lat={{LATITUDE}}&lng={{LONGITUDE}}&page=1&limit=60"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -24,7 +24,7 @@ http:
       value: "1"
       type: query
     - name: limit
-      value: "50"
+      value: "60"
       type: query
   auth: inherit
 

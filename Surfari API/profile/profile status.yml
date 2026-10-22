@@ -11,6 +11,83 @@ http:
       value: "{{TOKEN}}"
   auth: inherit
 
+runtime:
+  scripts:
+    - type: tests
+      code: |-
+        // Bruno: Collection-level Post Response script
+        // Compatible with different API response structures.
+
+        function findNulls(value, path, results) {
+          if (value === null) {
+            results.push(path);
+            return;
+          }
+
+          if (Array.isArray(value)) {
+            for (var i = 0; i < value.length; i++) {
+              findNulls(value[i], path + "[" + i + "]", results);
+            }
+            return;
+          }
+
+          if (typeof value === "object" && value !== null) {
+            var keys = Object.keys(value);
+
+            for (var j = 0; j < keys.length; j++) {
+              var key = keys[j];
+              findNulls(value[key], path + "." + key, results);
+            }
+          }
+        }
+
+        function getResponseBody() {
+          var body = res.getBody();
+
+          if (typeof body === "string") {
+            try {
+              return JSON.parse(body);
+            } catch (e) {
+              return body;
+            }
+          }
+
+          return body;
+        }
+
+        try {
+          var body = getResponseBody();
+          var nullPaths = [];
+
+          console.log("");
+          console.log("========== API RESPONSE CHECK ==========");
+          console.log("Method:", req.getMethod());
+          console.log("URL:", req.getUrl());
+          console.log("Status:", res.getStatus());
+
+          if (typeof body === "object" && body !== null) {
+            findNulls(body, "response", nullPaths);
+          } else if (body === null) {
+            nullPaths.push("response");
+          }
+
+          if (nullPaths.length > 0) {
+            console.log("NULL VALUES FOUND:", nullPaths.length);
+
+            for (var i = 0; i < nullPaths.length; i++) {
+              console.log("NULL:", nullPaths[i]);
+            }
+          } else {
+            console.log("No null values found.");
+          }
+
+          console.log("========================================");
+          console.log("");
+
+        } catch (error) {
+          console.log("[API CHECK ERROR]", error.message);
+        }
+
 settings:
   encodeUrl: true
   timeout: 0

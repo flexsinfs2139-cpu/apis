@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/explore/spots-forecast?date=2026-09-21&hour=14&page=1&limit=20"
+  url: "{{BASE_URL}}/explore/spots-forecast?date=2026-09-21&hour=14&page=1&limit=60"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -20,7 +20,7 @@ http:
       value: "1"
       type: query
     - name: limit
-      value: "20"
+      value: "60"
       type: query
   auth: inherit
 

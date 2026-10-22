@@ -3,9 +3,9 @@ variables:
   - name: BASE_URL
     value: https://api.staging.surfari.dev/api/v1
   - name: TOKEN
-    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzMzU0NmNmZi1jYjJkLTQxMjMtODE0ZC0yYmYwNGQ2OGZjOTIiLCJpYXQiOjE3OTI0OTg2NDgsImV4cCI6MTc5MjU4NTA0OH0.lXXyVC7OHg_P6eEqEpneVHYQgz5JD5B3xJpj4xt8hNI
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIzMzU0NmNmZi1jYjJkLTQxMjMtODE0ZC0yYmYwNGQ2OGZjOTIiLCJzaWQiOiJiNmFiMjI2MS05YjJkLTRmOGYtOTdkYi1kMzM1Njc1YWEyZmEiLCJpYXQiOjE3OTI2NjcwNDEsImV4cCI6MTc5Mjc1MzQ0MX0.HFTua_y88PfHssKdWkxzhkmVOFQ3vtEQNV5kH1JTQ3M
   - name: REFRESH_TOKEN
-    value: rt_eb7bd4ffe7095dca76e909f6e0005a4429c179da3dbccd0d0559112da9a41d88
+    value: rt_4b89b824210da35273a36e24bec88dc62b3af26236be9649e893a6e443dc6eb2
   - name: FORGET_PASS_TOKEN
     value: cb15e23033eaa1aedf504743df0efcf23f80cbdf477d94c4
   - name: PASSWORD
@@ -15,6 +15,6 @@ variables:
   - name: LONGITUDE
     value: " 35.104914"
   - name: SPOT_ID
-    value: 59365eeb-6c4b-404b-a659-d953faea447b
+    value: b0182785-551d-484e-b353-a5dabcad1fe3
   - name: MAPBOX_KEY
     value: ""
