@@ -8,20 +8,25 @@ http:
   url: "{{BASE_URL}}/onboarding/photographer/profile"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "homeSpotId": "gordon",
+        "homeSpotId": "hilton-beach",
         "homeSpot": {
-          "name": "Gordon Beach",
-          "address": "Gordon Beach, Tel Aviv",
-          "latitude": 32.0839,
-          "longitude": 34.7654,
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0839,34.7654"
+          "name": "Hilton Beach",
+          "address": "Tel Aviv, Israel",
+          "latitude": 32.0898,
+          "longitude": 34.7695,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0898,34.7695"
         },
-        "equipment": ["drone", "telephoto lens"]
+        "equipment": [
+          "dslrMirrorless",
+          "telephotoLens",
+          "waterHousing",
+          "drone"
+        ]
       }
   auth: inherit
 

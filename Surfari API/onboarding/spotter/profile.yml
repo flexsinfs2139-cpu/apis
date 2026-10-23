@@ -8,21 +8,23 @@ http:
   url: "{{BASE_URL}}/onboarding/spotter/profile"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: " {{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "primarySpotId": "hilton",
+        "primarySpotId": "dolphinaruim",
         "primarySpot": {
-          "name": "Hilton Beach",
-          "address": "Hilton Beach, Tel Aviv",
-          "latitude": 32.088,
-          "longitude": 34.768,
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.088,34.768"
+          "name": "Dolphinarium Beach",
+          "address": "Tel Aviv, Israel",
+          "latitude": 32.0712,
+          "longitude": 34.7618,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0712,34.7618"
         },
-        "coverageArea": "Tel Aviv coastline",
-        "reportTypes": ["crowd", "waveHeight"]
+        "coverageArea": "central_coast",
+        "reportTypes": [
+          "conditions"
+        ]
       }
   auth: inherit
 

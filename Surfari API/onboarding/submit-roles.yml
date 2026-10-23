@@ -11,9 +11,9 @@ http:
       value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "roles": ["surfer"]
+        "roles": ["surfer", "photographer", "spotter"]
       }
   auth: inherit
 

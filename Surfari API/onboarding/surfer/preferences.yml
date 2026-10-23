@@ -11,9 +11,18 @@ http:
       value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "goals": ["findBestConditions", "logMySession", "discoverNewSpots"]
+        "goals": [
+          "findBestConditions",
+          "logMySession",
+          "improveMyTechnique",
+          "discoverNewSpots",
+          "trackMyProgress",
+          "planSurfTrips",
+          "findPeopleToSurfWith",
+          "getSessionPhotosTaken"
+        ]
       }
   auth: inherit
 

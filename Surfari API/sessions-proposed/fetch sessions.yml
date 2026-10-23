@@ -5,10 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/sessions/list"
+  url: "{{BASE_URL}}/sessions/list?limit=2"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
+  params:
+    - name: limit
+      value: "2"
+      type: query
   auth: inherit
 
 settings:

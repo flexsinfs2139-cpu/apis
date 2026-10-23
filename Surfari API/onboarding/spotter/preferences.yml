@@ -8,12 +8,18 @@ http:
   url: "{{BASE_URL}}/onboarding/spotter/preferences"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "goals": ["helpMyLocalSurfCommunity", "beFirstToKnowAboutIncomingSwells"]
+        "goals": [
+          "helpMyLocalSurfCommunity",
+          "buildMySpotterReputation",
+          "monitorMyFavouriteSpots",
+          "beFirstToKnowAboutIncomingSwells",
+          "earnKarmaAndRecognition"
+        ]
       }
   auth: inherit
 

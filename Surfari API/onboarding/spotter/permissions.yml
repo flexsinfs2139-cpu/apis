@@ -8,7 +8,7 @@ http:
   url: "{{BASE_URL}}/onboarding/spotter/permissions"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: "{{TOKEN}}"
   body:
     type: json
     data: |-

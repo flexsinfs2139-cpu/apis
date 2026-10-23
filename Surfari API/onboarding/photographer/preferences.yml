@@ -8,12 +8,19 @@ http:
   url: "{{BASE_URL}}/onboarding/photographer/preferences"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: " {{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "goals": ["getMoreSessionBookings", "sellPhotosToSurfers"]
+        "goals": [
+          "getMoreSessionBookings",
+          "growMyPortfolio",
+          "sellPhotosToSurfers",
+          "setMyAvailability",
+          "buildLocalReputation",
+          "earnFromMyPassion"
+        ]
       }
   auth: inherit
 

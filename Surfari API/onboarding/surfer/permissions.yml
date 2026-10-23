@@ -11,7 +11,7 @@ http:
       value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
         "essential": true,
         "marketingAndAds": false,

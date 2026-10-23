@@ -11,21 +11,21 @@ http:
       value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
-        "dateOfBirth": "1996-04-12",
+        "dateOfBirth": "1998-05-15",
         "gender": "male",
-        "city": "Tel Aviv",
-        "homeSpotId": "gordon",
+        "city": "Tel Aviv-Yafo",
+        "homeSpotId": "gordon-beach",
         "homeSpot": {
           "name": "Gordon Beach",
-          "address": "Gordon Beach, Tel Aviv",
-          "latitude": 32.0839,
-          "longitude": 34.7654,
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0839,34.7654"
+          "address": "Herbert Samuel St, Tel Aviv, Israel",
+          "latitude": 32.0831,
+          "longitude": 34.7674,
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=32.0831,34.7674"
         },
-        "skillLevel": "",
-        "frequency": ""
+        "skillLevel": "intermediate",
+        "frequency": "few_times_a_week"
       }
   auth: inherit
 

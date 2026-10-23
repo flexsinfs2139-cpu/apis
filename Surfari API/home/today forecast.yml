@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/home/today-forecast?spotId={{SPOT_ID}}"
+  url: "{{BASE_URL}}/home/today-forecast"
   headers:
     - name: Authorization
       value: "{{TOKEN}}"
@@ -13,6 +13,7 @@ http:
     - name: spotId
       value: "{{SPOT_ID}}"
       type: query
+      disabled: true
   auth: inherit
 
 settings:

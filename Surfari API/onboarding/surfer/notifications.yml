@@ -8,14 +8,14 @@ http:
   url: "{{BASE_URL}}/onboarding/surfer/notifications"
   headers:
     - name: Authorization
-      value: Bearer {{TOKEN}}
+      value: "{{TOKEN}}"
   body:
     type: json
-    data: |-
+    data: |
       {
         "swellAlerts": true,
         "liveCheckIns": true,
-        "sessionPhotos": false
+        "sessionPhotos": true
       }
   auth: inherit
 
